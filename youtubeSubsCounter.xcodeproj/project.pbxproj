@@ -8,24 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		1A1A0A4CB62F8F97DE688242 /* libPods-youtubeSubsCounter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E9F48EDCE492DAC9ADEC6C /* libPods-youtubeSubsCounter.a */; };
-		A9052790232FF9D000FC5A6B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A905278F232FF9D000FC5A6B /* FirstViewController.swift */; };
+		A9052790232FF9D000FC5A6B /* AddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A905278F232FF9D000FC5A6B /* AddingViewController.swift */; };
 		A90A4542232E5DB200951801 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A4541232E5DB200951801 /* AppDelegate.swift */; };
-		A90A4544232E5DB200951801 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A4543232E5DB200951801 /* ViewController.swift */; };
 		A90A4547232E5DB200951801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90A4545232E5DB200951801 /* Main.storyboard */; };
 		A90A4549232E5DB400951801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90A4548232E5DB400951801 /* Assets.xcassets */; };
 		A90A454C232E5DB400951801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90A454A232E5DB400951801 /* LaunchScreen.storyboard */; };
+		A9FF0C232360E9E60044BCE4 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF0C222360E9E60044BCE4 /* CustomCollectionViewCell.swift */; };
+		A9FF0C252360EA9A0044BCE4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF0C242360EA9A0044BCE4 /* CollectionViewController.swift */; };
+		A9FF0C272360EB570044BCE4 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF0C262360EB570044BCE4 /* Channel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		88E9F48EDCE492DAC9ADEC6C /* libPods-youtubeSubsCounter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-youtubeSubsCounter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A905278F232FF9D000FC5A6B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A905278F232FF9D000FC5A6B /* AddingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingViewController.swift; sourceTree = "<group>"; };
 		A90A453E232E5DB200951801 /* youtubeSubsCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = youtubeSubsCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90A4541232E5DB200951801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A90A4543232E5DB200951801 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A90A4546232E5DB200951801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A90A4548232E5DB400951801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90A454B232E5DB400951801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A90A454D232E5DB400951801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9FF0C222360E9E60044BCE4 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9FF0C242360EA9A0044BCE4 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		A9FF0C262360EB570044BCE4 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		E74FA3E2FDF232C0175F2D8B /* Pods-youtubeSubsCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youtubeSubsCounter.release.xcconfig"; path = "Target Support Files/Pods-youtubeSubsCounter/Pods-youtubeSubsCounter.release.xcconfig"; sourceTree = "<group>"; };
 		F993B2577EC8DBFC4478BCC5 /* Pods-youtubeSubsCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youtubeSubsCounter.debug.xcconfig"; path = "Target Support Files/Pods-youtubeSubsCounter/Pods-youtubeSubsCounter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,15 +67,25 @@
 		A90A4540232E5DB200951801 /* youtubeSubsCounter */ = {
 			isa = PBXGroup;
 			children = (
-				A90A4541232E5DB200951801 /* AppDelegate.swift */,
-				A905278F232FF9D000FC5A6B /* FirstViewController.swift */,
-				A90A4543232E5DB200951801 /* ViewController.swift */,
+				A9FF0C282360FEA90044BCE4 /* Controllers */,
 				A90A4545232E5DB200951801 /* Main.storyboard */,
+				A9FF0C262360EB570044BCE4 /* Channel.swift */,
 				A90A4548232E5DB400951801 /* Assets.xcassets */,
 				A90A454A232E5DB400951801 /* LaunchScreen.storyboard */,
 				A90A454D232E5DB400951801 /* Info.plist */,
 			);
 			path = youtubeSubsCounter;
+			sourceTree = "<group>";
+		};
+		A9FF0C282360FEA90044BCE4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A90A4541232E5DB200951801 /* AppDelegate.swift */,
+				A9FF0C222360E9E60044BCE4 /* CustomCollectionViewCell.swift */,
+				A9FF0C242360EA9A0044BCE4 /* CollectionViewController.swift */,
+				A905278F232FF9D000FC5A6B /* AddingViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		D377BE26077B324BF669AE3E /* Pods */ = {
@@ -188,9 +202,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9052790232FF9D000FC5A6B /* FirstViewController.swift in Sources */,
-				A90A4544232E5DB200951801 /* ViewController.swift in Sources */,
+				A9052790232FF9D000FC5A6B /* AddingViewController.swift in Sources */,
+				A9FF0C272360EB570044BCE4 /* Channel.swift in Sources */,
 				A90A4542232E5DB200951801 /* AppDelegate.swift in Sources */,
+				A9FF0C232360E9E60044BCE4 /* CustomCollectionViewCell.swift in Sources */,
+				A9FF0C252360EA9A0044BCE4 /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -322,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -338,8 +354,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9739Q97K2B;
+				DEVELOPMENT_TEAM = YPUYXNQK24;
 				INFOPLIST_FILE = youtubeSubsCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,8 +374,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9739Q97K2B;
+				DEVELOPMENT_TEAM = YPUYXNQK24;
 				INFOPLIST_FILE = youtubeSubsCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

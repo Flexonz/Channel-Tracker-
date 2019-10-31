@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  youtubeSubsCounter
-//
-//  Created by Anton Asetski on 9/15/19.
-//  Copyright © 2019 Anton Asetski. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

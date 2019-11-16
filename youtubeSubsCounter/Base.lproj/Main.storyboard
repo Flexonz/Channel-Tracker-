@@ -26,30 +26,40 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="itemCell" id="Sds-B7-Iga" customClass="CustomCollectionViewCell" customModule="youtubeSubsCounter" customModuleProvider="target">
-                                <rect key="frame" x="8" y="8" width="147" height="150"/>
+                                <rect key="frame" x="8" y="8" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="147" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ozp-dt-cll" userLabel="backgroundImage">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ozp-dt-cll" userLabel="backgroundImage">
+                                            <rect key="frame" x="10" y="0.0" width="130" height="124"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdg-BA-DLL">
-                                            <rect key="frame" x="0.0" y="129" width="150" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kk4-OP-3cd" userLabel="avatarImage">
+                                            <rect key="frame" x="38" y="25" width="74" height="74"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdg-BA-DLL">
+                                            <rect key="frame" x="47" y="124" width="56" height="26"/>
                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kk4-OP-3cd" userLabel="avatarImage">
-                                            <rect key="frame" x="40" y="40" width="70" height="70"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                     </subviews>
                                 </view>
-                                <size key="customSize" width="147" height="150"/>
+                                <constraints>
+                                    <constraint firstItem="Bdg-BA-DLL" firstAttribute="centerX" secondItem="Sds-B7-Iga" secondAttribute="centerX" id="0Zh-YF-idv"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bdg-BA-DLL" secondAttribute="bottom" id="0yg-hy-pMc"/>
+                                    <constraint firstItem="Ozp-dt-cll" firstAttribute="leading" secondItem="Sds-B7-Iga" secondAttribute="leading" constant="10" id="7hr-QC-B1F"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ozp-dt-cll" secondAttribute="trailing" constant="10" id="AVi-6H-aqc"/>
+                                    <constraint firstItem="Bdg-BA-DLL" firstAttribute="top" secondItem="Ozp-dt-cll" secondAttribute="bottom" id="D3D-yr-QEb"/>
+                                    <constraint firstItem="Ozp-dt-cll" firstAttribute="top" secondItem="Sds-B7-Iga" secondAttribute="top" id="Dp2-cM-dfx"/>
+                                    <constraint firstItem="Bdg-BA-DLL" firstAttribute="top" secondItem="kk4-OP-3cd" secondAttribute="bottom" constant="25" id="MFZ-IW-u70"/>
+                                    <constraint firstItem="kk4-OP-3cd" firstAttribute="top" secondItem="Ozp-dt-cll" secondAttribute="firstBaseline" constant="25" id="Qw2-hl-FvN"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="kk4-OP-3cd" secondAttribute="trailing" constant="30" id="ggw-4U-rQh"/>
+                                    <constraint firstItem="Ozp-dt-cll" firstAttribute="centerX" secondItem="Sds-B7-Iga" secondAttribute="centerX" id="h2S-UG-Pav"/>
+                                    <constraint firstItem="kk4-OP-3cd" firstAttribute="leading" secondItem="Sds-B7-Iga" secondAttribute="leadingMargin" constant="30" id="ma7-t0-AZ1"/>
+                                </constraints>
+                                <size key="customSize" width="150" height="150"/>
                                 <connections>
                                     <outlet property="avatarImage" destination="kk4-OP-3cd" id="5Ln-ep-ggU"/>
                                     <outlet property="backImage" destination="Ozp-dt-cll" id="1KT-KY-Qbk"/>
@@ -74,7 +84,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLF-Wr-FTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-886" y="70"/>
+            <point key="canvasLocation" x="-886.95652173913049" y="69.642857142857139"/>
         </scene>
         <!--Adding View Controller-->
         <scene sceneID="AZQ-3d-XzI">
@@ -84,16 +94,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Channel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gna-kG-ncj">
-                                <rect key="frame" x="151" y="386" width="113" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Channel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gna-kG-ncj">
+                                <rect key="frame" x="150.5" y="383" width="113" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nWH-mP-bf5"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHK-HD-5MU">
-                                <rect key="frame" x="141" y="493" width="131" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHK-HD-5MU">
+                                <rect key="frame" x="147.5" y="493" width="119" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="cxR-Bw-PxS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
                                 <state key="normal" title="ADD">
                                     <color key="titleColor" red="0.024989591911435127" green="0.0046051014214754105" blue="0.016915461048483849" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -102,15 +116,23 @@
                                     <action selector="goPressed:" destination="3SR-be-hUk" eventType="touchUpInside" id="l53-1p-dVR"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="center" minimumFontSize="16" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="crJ-ED-Soj">
-                                <rect key="frame" x="53" y="433" width="307" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="center" minimumFontSize="16" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="crJ-ED-Soj">
+                                <rect key="frame" x="50" y="433" width="314" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.91331559419631958" green="0.51976746320724487" blue="0.48549544811248779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gna-kG-ncj" firstAttribute="centerX" secondItem="clv-kH-oNw" secondAttribute="centerX" id="0F3-j5-JrE"/>
+                            <constraint firstItem="L95-Up-79d" firstAttribute="trailing" secondItem="crJ-ED-Soj" secondAttribute="trailing" constant="50" id="9py-lY-YOc"/>
+                            <constraint firstItem="SHK-HD-5MU" firstAttribute="centerX" secondItem="clv-kH-oNw" secondAttribute="centerX" id="Kto-1u-ziI"/>
+                            <constraint firstItem="crJ-ED-Soj" firstAttribute="centerY" secondItem="clv-kH-oNw" secondAttribute="centerY" id="NoM-q3-DOT"/>
+                            <constraint firstItem="crJ-ED-Soj" firstAttribute="leading" secondItem="L95-Up-79d" secondAttribute="leading" constant="50" id="TBf-Bv-DpO"/>
+                            <constraint firstItem="SHK-HD-5MU" firstAttribute="top" secondItem="crJ-ED-Soj" secondAttribute="bottom" constant="30" id="q3Y-zw-DF1"/>
+                            <constraint firstItem="crJ-ED-Soj" firstAttribute="top" secondItem="gna-kG-ncj" secondAttribute="bottom" constant="10" id="xjk-dd-N1Y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="L95-Up-79d"/>
                     </view>
                     <connections>

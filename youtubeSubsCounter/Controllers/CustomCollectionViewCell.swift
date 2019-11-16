@@ -10,7 +10,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
         backImage.layer.borderColor = UIColor.black.cgColor
-        backImage.layer.borderWidth = 3.0
+        backImage.layer.borderWidth = 5.0
         backImage.layer.cornerRadius = backImage.frame.size.height / 2
         avatarImage.layer.masksToBounds = true
         avatarImage.layer.borderWidth = 5.0
